@@ -14,7 +14,7 @@ Había que actualizar el inventario nacional de áreas degradadas por residuos s
 | Anexo I · residuos sólidos municipales | 1 080 |
 | Anexo II · residuos de construcción y demolición | 1 130 |
 
-Los supervisores de campo llenaban las fichas **a mano**. Después, otro equipo las digitaba y una revisora comparaba cada ficha con el inventario, el mapa y las capas de áreas protegidas, ríos y zonas arqueológicas. **Revisar una ficha tomaba alrededor de 1 hora.** Muchas zonas no tienen señal, y los errores de coordenadas se descubrían recién en la oficina.
+Los supervisores de campo llenaban las fichas **a mano**. Después, otro equipo las digitaba y el equipo de revisión comparaba cada ficha con el inventario, el mapa y las capas de áreas protegidas, ríos y zonas arqueológicas. **Revisar una ficha tomaba alrededor de 1 hora.** Muchas zonas no tienen señal, y los errores de coordenadas se descubrían recién en la oficina.
 
 ## La solución
 
@@ -42,7 +42,7 @@ flowchart LR
 **En la oficina**
 - Cada ficha genera automáticamente su **Word y PDF** con el formato oficial.
 - Un **panel web con acceso restringido** muestra el estado de cada ficha (pendiente, en revisión, observada, conforme) y las alertas ya calculadas.
-- Si la revisora observa una ficha, el supervisor la corrige y la **reenvía desde su app**.
+- Si el equipo de revisión observa una ficha, el supervisor la corrige y la **reenvía desde su app**.
 - **Medición integrada:** se registra cuánto tarda cada etapa (llenado, envío, recepción, revisión) para detectar cuellos de botella.
 
 ## Resultados
@@ -52,18 +52,18 @@ Primeras semanas de uso real (noviembre de 2026):
 | Indicador | Valor |
 |---|---|
 | Fichas recibidas | más de 230 (205 del Anexo I y 32 del Anexo II) |
-| **Tiempo de revisión por ficha** | **de ~1 hora a una mediana de 5 minutos (‑92 %)** |
+| **Tiempo de revisión por ficha** | **de ~1 hora (estimación del área) a una mediana de 5 minutos (‑92 %)** |
 | Revisión de una ficha conforme | mediana de 1 minuto |
 | Revisión de una ficha observada | mediana de 15 minutos, porque requiere redactar la observación |
 | Llenado en campo (uso activo) | mediana de 8,5 minutos (Anexo I, 168 fichas) |
 | Envío hasta el servidor | mediana de 78 segundos; el 83 % llega en menos de 5 minutos |
-| Digitación manual | eliminada: se evitó contratar a unas 10 personas para sistematizar |
+| Digitación manual | eliminada: las fichas llegan ya digitales y validadas |
 
-> La medición de la revisión empezó el 12 de noviembre de 2026, con una muestra todavía pequeña.
+> La revisión se midió primero con cronómetro; desde el 12 de noviembre de 2026 la registra automáticamente el propio panel, desde que se abre la ficha hasta que se da conforme u observa.
 
 ## Cómo trabajé
 
-1. **Requerimientos:** levanté las reglas con los supervisores, la revisora y la coordinación. Las reglas las definí yo; no las inventó la IA.
+1. **Requerimientos:** levanté las reglas con los supervisores, el equipo de revisión y la coordinación, a partir de la normativa; no las inventó la IA.
 2. **Construcción con IA:** usé Claude para escribir gran parte del código, por iteraciones y módulo por módulo.
 3. **Verificación:** no me quedé con lo que decía la IA.
    - Revisé el código con agentes de IA separados.
