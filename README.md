@@ -11,8 +11,8 @@ Había que actualizar el inventario nacional de áreas degradadas por residuos s
 
 | Inventario | Áreas por actualizar |
 |---|---|
-| Anexo I · residuos sólidos municipales | 1 080 |
-| Anexo II · residuos de construcción y demolición | 1 130 |
+| Anexo I · residuos sólidos municipales | 1080 |
+| Anexo II · residuos de construcción y demolición | 1130 |
 
 Los supervisores de campo llenaban las fichas **a mano**. Después, otro equipo las digitaba y el equipo de revisión comparaba cada ficha con el inventario, el mapa y las capas de áreas protegidas, ríos y zonas arqueológicas. **Revisar una ficha tomaba alrededor de 1 hora.** Muchas zonas no tienen señal, y los errores de coordenadas se descubrían recién en la oficina.
 
